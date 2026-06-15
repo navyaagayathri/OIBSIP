@@ -2,7 +2,7 @@
 
 ## Objective
 
-The objective of this project is to demonstrate a SQL Injection vulnerability using Damn Vulnerable Web Application (DVWA) running in Low Security mode.
+Demonstrate an SQL Injection vulnerability on a web application using DVWA (Damn Vulnerable Web Application) with the security level set to Low.
 
 ## Tools Used
 
@@ -12,34 +12,40 @@ The objective of this project is to demonstrate a SQL Injection vulnerability us
 - MySQL
 - Web Browser
 
-## Vulnerability Overview
+## Setup
 
-SQL Injection is a web application vulnerability that occurs when user input is directly inserted into SQL queries without proper validation or sanitization.
+1. Installed and configured DVWA on a local server using XAMPP.
+2. Started Apache and MySQL services.
+3. Created the DVWA database using the Setup / Reset Database page.
+4. Logged into DVWA using the default credentials.
+5. Set the security level to Low using the DVWA Security page.
 
-## Setup Procedure
+## Steps Performed
 
-1. Started Apache and MySQL services using XAMPP.
-2. Opened DVWA in a web browser.
-3. Created the database using Setup / Reset Database.
-4. Logged into DVWA.
-5. Set the Security Level to Low.
-
-## Payload Used
+1. Opened the SQL Injection module in DVWA.
+2. Entered a normal User ID (`1`) to observe the default behavior.
+3. Entered the following SQL Injection payload:
 
 ```sql
 1' OR '1'='1
 ```
 
-## Steps Performed
+4. Submitted the request.
+5. Observed that the application returned multiple user records instead of a single record.
 
-1. Opened the SQL Injection module.
-2. Entered the payload in the User ID field.
-3. Clicked Submit.
-4. Observed multiple user records being returned.
+## Why This Works
 
-## Results
+At Low Security, DVWA directly inserts user input into SQL queries without proper validation or sanitization. The payload:
 
-The SQL Injection attack was successful. Multiple user records were displayed instead of a single record.
+```sql
+1' OR '1'='1
+```
+
+creates a condition that is always true, causing the database to return all matching records.
+
+## Result
+
+The SQL Injection attack was successful. Multiple user records were displayed, demonstrating that the application is vulnerable to SQL Injection attacks when user input is not properly handled.
 
 ## Screenshots
 
@@ -59,16 +65,19 @@ The SQL Injection attack was successful. Multiple user records were displayed in
 
 - Authentication Bypass
 - Unauthorized Data Access
-- Sensitive Information Disclosure
+- Information Disclosure
 - Database Manipulation
+- Potential System Compromise
 
 ## Prevention Methods
 
-- Prepared Statements
-- Parameterized Queries
-- Input Validation
-- Input Sanitization
+- Use Prepared Statements
+- Use Parameterized Queries
+- Validate User Input
+- Sanitize User Input
+- Follow Secure Coding Practices
+- Apply Least Privilege Access Control
 
 ## Conclusion
 
-This project successfully demonstrated a SQL Injection vulnerability in DVWA running with Low Security settings. The attack highlighted the importance of secure coding practices and proper input validation.
+This project successfully demonstrated a SQL Injection vulnerability in DVWA running with Low Security settings. The exercise highlights the importance of secure coding practices, input validation, and parameterized queries in protecting web applications against SQL Injection attacks.
