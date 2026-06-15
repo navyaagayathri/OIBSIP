@@ -1,4 +1,12 @@
+```md
 # Research Report on Common Network Security Threats
+
+**Author:** Your Name  
+**Internship:** Oasis Infobyte Cyber Security Internship  
+**Task:** Research Report on Common Network Security Threats  
+**Date:** June 2026
+
+---
 
 ## Table of Contents
 
@@ -19,6 +27,8 @@
 # 1. Introduction
 
 Network security is the practice of protecting computer networks, devices, and data from unauthorized access, misuse, and cyberattacks. As organizations increasingly rely on digital communication and online services, network security has become a critical component of information security.
+
+Mitigation refers to the security measures, strategies, and controls implemented to reduce, prevent, or eliminate the risks posed by cybersecurity threats. Effective mitigation helps organizations maintain the confidentiality, integrity, and availability of their systems and data.
 
 Cybercriminals use various techniques to exploit vulnerabilities in networks. These attacks can lead to data breaches, financial losses, service disruptions, and reputational damage. Understanding common network security threats and implementing effective countermeasures are essential for maintaining a secure network environment.
 
@@ -185,7 +195,7 @@ Malicious programs disguised as legitimate software.
 
 ### Ransomware
 
-Malware that encrypts files and demands payment for decryption.
+Malware that encrypts files and demands payment for their release.
 
 ### Spyware
 
@@ -237,39 +247,42 @@ Attackers send fraudulent emails, messages, or websites that imitate trusted org
 
 # 8. Real-World Examples
 
-## Mirai Botnet DDoS Attack (2016)
+## Mirai Botnet Attack (2016) – Example of a DDoS Attack
 
-The Mirai Botnet compromised thousands of Internet of Things (IoT) devices and launched a massive DDoS attack against DNS provider Dyn. The attack disrupted major online services, including social media and streaming platforms.
+The Mirai Botnet infected thousands of Internet of Things (IoT) devices and used them to launch a massive Distributed Denial of Service (DDoS) attack against DNS provider Dyn. The attack disrupted major online services including Twitter, Netflix, Reddit, and Spotify.
 
 ### Lessons Learned
 
 - Secure IoT devices properly
-- Change default passwords
-- Monitor unusual network activity
+- Change default usernames and passwords
+- Monitor unusual network traffic
+- Implement DDoS protection mechanisms
 
 ---
 
-## WannaCry Ransomware Attack (2017)
+## WannaCry Ransomware Attack (2017) – Example of a Malware Attack
 
-WannaCry spread rapidly across networks by exploiting vulnerabilities in Windows systems. It affected organizations worldwide, including hospitals, businesses, and government agencies.
+WannaCry spread rapidly across networks by exploiting a vulnerability in Microsoft Windows systems. The ransomware encrypted files and demanded payment for decryption. It affected organizations in more than 150 countries.
 
 ### Lessons Learned
 
 - Apply security patches promptly
-- Maintain reliable backups
-- Use endpoint protection solutions
+- Maintain regular backups
+- Use endpoint protection software
+- Conduct vulnerability assessments
 
 ---
 
-## Equifax Data Breach (2017)
+## Equifax Data Breach (2017) – Example of Vulnerability Exploitation
 
-The Equifax breach exposed sensitive information belonging to millions of individuals due to an unpatched software vulnerability.
+The Equifax breach exposed sensitive information belonging to millions of individuals due to an unpatched software vulnerability. Attackers gained unauthorized access to personal and financial data.
 
 ### Lessons Learned
 
 - Implement effective patch management
-- Conduct regular security assessments
-- Continuously monitor systems
+- Conduct regular security audits
+- Monitor systems continuously
+- Follow secure software update practices
 
 ---
 
@@ -307,3 +320,8 @@ Understanding how these threats operate and implementing appropriate security me
 5. Microsoft Security Documentation.
 6. IBM Security Learning Resources.
 7. Cybersecurity and Infrastructure Security Agency (CISA).
+
+---
+
+## End of Report
+```
