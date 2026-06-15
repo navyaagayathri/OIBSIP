@@ -1,7 +1,6 @@
-```md
 # Research Report on Common Network Security Threats
 
-**Author:** Your Name  
+**Author:** M. Navya Gayathri  
 **Internship:** Oasis Infobyte Cyber Security Internship  
 **Task:** Research Report on Common Network Security Threats  
 **Date:** June 2026
@@ -28,11 +27,9 @@
 
 Network security is the practice of protecting computer networks, devices, and data from unauthorized access, misuse, and cyberattacks. As organizations increasingly rely on digital communication and online services, network security has become a critical component of information security.
 
-Mitigation refers to the security measures, strategies, and controls implemented to reduce, prevent, or eliminate the risks posed by cybersecurity threats. Effective mitigation helps organizations maintain the confidentiality, integrity, and availability of their systems and data.
+Mitigation refers to the security measures, strategies, and controls implemented to reduce, prevent, or eliminate the risks posed by cybersecurity threats.
 
-Cybercriminals use various techniques to exploit vulnerabilities in networks. These attacks can lead to data breaches, financial losses, service disruptions, and reputational damage. Understanding common network security threats and implementing effective countermeasures are essential for maintaining a secure network environment.
-
-This report examines several common network security threats, including Denial of Service (DoS) attacks, Distributed Denial of Service (DDoS) attacks, Man-in-the-Middle (MITM) attacks, spoofing, malware, and phishing attacks. It also discusses their impact, real-world examples, and mitigation strategies.
+Cybercriminals use various techniques to exploit vulnerabilities in networks. These attacks can lead to data breaches, financial losses, service disruptions, and reputational damage.
 
 ---
 
@@ -40,27 +37,25 @@ This report examines several common network security threats, including Denial o
 
 ## Definition
 
-A Denial of Service (DoS) attack is a cyberattack that aims to make a system, server, or network unavailable to legitimate users by overwhelming it with excessive traffic or resource requests.
+A Denial of Service (DoS) attack attempts to make a system unavailable by overwhelming it with excessive traffic or requests.
 
 ## How It Works
 
-An attacker sends a large number of requests to a target system. The target becomes overloaded and is unable to respond to legitimate users, resulting in service disruption.
+Attackers flood a target server with requests until it can no longer respond to legitimate users.
 
 ## Impact
 
-- Website or service downtime
-- Loss of revenue
+- Service downtime
+- Financial losses
 - Reduced productivity
-- Customer dissatisfaction
-- Damage to organizational reputation
+- Reputation damage
 
 ## Mitigation Strategies
 
-- Configure firewalls properly
-- Implement traffic filtering
-- Use rate limiting
-- Monitor network traffic continuously
-- Deploy intrusion detection systems (IDS)
+- Firewalls
+- Rate limiting
+- Traffic filtering
+- Intrusion Detection Systems (IDS)
 
 ---
 
@@ -68,26 +63,24 @@ An attacker sends a large number of requests to a target system. The target beco
 
 ## Definition
 
-A Distributed Denial of Service (DDoS) attack is an advanced form of DoS attack where multiple compromised devices attack a target simultaneously.
+A DDoS attack is a DoS attack launched from multiple compromised devices simultaneously.
 
 ## How It Works
 
-Attackers create a botnet consisting of infected computers and IoT devices. These devices send massive amounts of traffic to the target, overwhelming its resources.
+Botnets consisting of infected computers or IoT devices generate massive traffic toward a target.
 
 ## Impact
 
-- Large-scale service outages
-- Increased operational costs
-- Loss of customer trust
+- Large-scale outages
 - Business interruption
+- Loss of customer trust
 
 ## Mitigation Strategies
 
-- Use DDoS protection services
-- Implement load balancing
-- Utilize Content Delivery Networks (CDNs)
-- Deploy traffic analysis tools
-- Maintain redundant infrastructure
+- DDoS protection services
+- Load balancing
+- Content Delivery Networks (CDNs)
+- Traffic monitoring
 
 ---
 
@@ -95,40 +88,35 @@ Attackers create a botnet consisting of infected computers and IoT devices. Thes
 
 ## Definition
 
-A Man-in-the-Middle (MITM) attack occurs when an attacker secretly intercepts communication between two parties.
+A MITM attack occurs when an attacker secretly intercepts communication between two parties.
 
 ## How It Works
 
-The attacker positions themselves between a user and a server. Data exchanged between the two parties is intercepted, monitored, or altered without their knowledge.
+The attacker positions themselves between a user and a server, intercepting or modifying transmitted data.
 
 ## Common Techniques
 
 ### Packet Sniffing
-
-Capturing unencrypted network traffic to obtain sensitive information.
+Capturing unencrypted traffic.
 
 ### Session Hijacking
+Stealing session cookies.
 
-Stealing session cookies to gain unauthorized access to user accounts.
-
-### Rogue Wi-Fi Access Points
-
-Creating fake wireless networks to intercept user communications.
+### Rogue Wi‑Fi Access Points
+Creating fake Wi‑Fi networks.
 
 ## Impact
 
-- Theft of sensitive information
+- Data theft
 - Credential compromise
 - Financial fraud
-- Unauthorized access to systems
 
 ## Mitigation Strategies
 
-- Use HTTPS encryption
-- Enable VPN connections
-- Implement Multi-Factor Authentication (MFA)
-- Avoid unsecured public Wi-Fi networks
-- Use secure communication protocols
+- HTTPS
+- VPNs
+- Multi‑Factor Authentication (MFA)
+- Secure communication protocols
 
 ---
 
@@ -141,35 +129,29 @@ Spoofing is the act of impersonating a trusted source to deceive users or system
 ## Types of Spoofing
 
 ### IP Spoofing
-
-Attackers forge IP addresses to disguise their identity or impersonate trusted devices.
+Forged IP addresses.
 
 ### Email Spoofing
-
-Attackers send emails that appear to originate from legitimate organizations.
+Fraudulent emails appearing legitimate.
 
 ### ARP Spoofing
-
-Attackers associate their MAC address with another device's IP address to intercept traffic.
+Redirecting local network traffic.
 
 ### DNS Spoofing
-
-Attackers manipulate DNS records to redirect users to malicious websites.
+Redirecting users to malicious websites.
 
 ## Impact
 
 - Identity theft
-- Data interception
 - Unauthorized access
 - Malware distribution
 
 ## Mitigation Strategies
 
-- Use packet filtering
-- Implement DNS security measures
-- Configure network authentication mechanisms
-- Deploy email authentication protocols (SPF, DKIM, DMARC)
-- Monitor network activity regularly
+- Packet filtering
+- DNS security
+- SPF, DKIM, and DMARC
+- Network monitoring
 
 ---
 
@@ -177,44 +159,28 @@ Attackers manipulate DNS records to redirect users to malicious websites.
 
 ## Definition
 
-Malware refers to malicious software designed to damage, disrupt, or gain unauthorized access to systems and networks.
+Malware is malicious software designed to damage, disrupt, or gain unauthorized access to systems.
 
 ## Common Types
 
-### Viruses
-
-Programs that attach themselves to legitimate files and spread when executed.
-
-### Worms
-
-Self-replicating malware that spreads across networks without user interaction.
-
-### Trojans
-
-Malicious programs disguised as legitimate software.
-
-### Ransomware
-
-Malware that encrypts files and demands payment for their release.
-
-### Spyware
-
-Software that secretly collects user information and activities.
+- Viruses
+- Worms
+- Trojans
+- Ransomware
+- Spyware
 
 ## Impact
 
 - Data loss
+- Financial damage
 - System compromise
-- Financial losses
-- Operational disruption
 
 ## Mitigation Strategies
 
-- Install antivirus software
-- Update operating systems regularly
-- Avoid suspicious downloads
-- Conduct security awareness training
-- Maintain regular data backups
+- Antivirus software
+- Regular updates
+- Security awareness training
+- Data backups
 
 ---
 
@@ -222,26 +188,24 @@ Software that secretly collects user information and activities.
 
 ## Definition
 
-Phishing is a social engineering attack that attempts to trick users into revealing sensitive information.
+Phishing is a social engineering attack that tricks users into revealing sensitive information.
 
 ## How It Works
 
-Attackers send fraudulent emails, messages, or websites that imitate trusted organizations. Victims are encouraged to disclose credentials, banking information, or personal data.
+Attackers send fraudulent emails, messages, or websites that imitate trusted organizations.
 
 ## Impact
 
 - Credential theft
 - Financial fraud
 - Identity theft
-- Unauthorized account access
 
 ## Mitigation Strategies
 
-- Train users to identify phishing attempts
-- Enable Multi-Factor Authentication (MFA)
-- Use email filtering solutions
-- Verify sender authenticity
-- Avoid clicking suspicious links
+- User awareness training
+- MFA
+- Email filtering
+- Sender verification
 
 ---
 
@@ -249,80 +213,68 @@ Attackers send fraudulent emails, messages, or websites that imitate trusted org
 
 ## Mirai Botnet Attack (2016) – Example of a DDoS Attack
 
-The Mirai Botnet infected thousands of Internet of Things (IoT) devices and used them to launch a massive Distributed Denial of Service (DDoS) attack against DNS provider Dyn. The attack disrupted major online services including Twitter, Netflix, Reddit, and Spotify.
+The Mirai Botnet infected thousands of IoT devices and launched a massive DDoS attack against Dyn, disrupting major online services.
 
 ### Lessons Learned
 
-- Secure IoT devices properly
-- Change default usernames and passwords
-- Monitor unusual network traffic
-- Implement DDoS protection mechanisms
-
----
+- Secure IoT devices
+- Change default passwords
+- Monitor network traffic
 
 ## WannaCry Ransomware Attack (2017) – Example of a Malware Attack
 
-WannaCry spread rapidly across networks by exploiting a vulnerability in Microsoft Windows systems. The ransomware encrypted files and demanded payment for decryption. It affected organizations in more than 150 countries.
+WannaCry spread through vulnerable Windows systems and encrypted files across organizations worldwide.
 
 ### Lessons Learned
 
-- Apply security patches promptly
-- Maintain regular backups
-- Use endpoint protection software
-- Conduct vulnerability assessments
-
----
+- Apply security patches
+- Maintain backups
+- Use endpoint protection
 
 ## Equifax Data Breach (2017) – Example of Vulnerability Exploitation
 
-The Equifax breach exposed sensitive information belonging to millions of individuals due to an unpatched software vulnerability. Attackers gained unauthorized access to personal and financial data.
+The breach exposed sensitive information due to an unpatched software vulnerability.
 
 ### Lessons Learned
 
-- Implement effective patch management
-- Conduct regular security audits
-- Monitor systems continuously
-- Follow secure software update practices
+- Effective patch management
+- Security audits
+- Continuous monitoring
 
 ---
 
 # 9. Best Practices for Prevention
 
-Organizations should implement the following security practices:
-
-- Use firewalls and intrusion detection systems
-- Keep software and operating systems updated
+- Use firewalls and IDS/IPS
+- Keep systems updated
 - Apply security patches regularly
-- Implement Multi-Factor Authentication (MFA)
-- Use strong password policies
+- Implement MFA
+- Use strong passwords
 - Encrypt sensitive communications
-- Conduct employee security awareness training
-- Perform regular vulnerability assessments
-- Monitor network traffic continuously
-- Maintain secure backups and disaster recovery plans
+- Conduct security awareness training
+- Monitor network traffic
+- Maintain backups
 
 ---
 
 # 10. Conclusion
 
-Network security threats continue to evolve and pose significant risks to organizations and individuals. Attacks such as DoS, DDoS, MITM, spoofing, malware, and phishing can result in financial losses, data breaches, and service disruptions.
-
-Understanding how these threats operate and implementing appropriate security measures can significantly reduce the likelihood of successful attacks. Organizations must adopt a proactive security strategy that includes continuous monitoring, regular updates, employee training, and strong access controls to maintain a secure network environment.
+Network security threats continue to evolve and pose significant risks to organizations and individuals. Understanding common threats such as DoS, DDoS, MITM, spoofing, malware, and phishing attacks helps organizations implement effective security controls and reduce cyber risk.
 
 ---
 
 # 11. References
 
-1. National Institute of Standards and Technology (NIST) Cybersecurity Framework.
-2. OWASP Foundation Security Resources.
-3. Cisco Cybersecurity Documentation.
-4. Cloudflare Learning Center.
-5. Microsoft Security Documentation.
-6. IBM Security Learning Resources.
-7. Cybersecurity and Infrastructure Security Agency (CISA).
+1. NIST Cybersecurity Framework
+2. OWASP Foundation
+3. Cisco Security Documentation
+4. Cloudflare Learning Center
+5. Microsoft Security Documentation
+6. IBM Security Resources
+7. CISA Cybersecurity Resources
 
 ---
 
 ## End of Report
-```
+
 
